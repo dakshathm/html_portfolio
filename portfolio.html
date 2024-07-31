@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Dakshath M Karkera</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <div class="theme-toggle">
+            <i class="fas fa-sun" id="light-icon"></i>
+            <label class="switch">
+              <input type="checkbox" id="theme-toggle">
+              <span class="slider round"></span>
+            </label>
+            <i class="fas fa-moon" id="dark-icon"></i>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <nav id="hamburger-nav">
+    <div class="logo">Dakshath M Karkera</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="assets/mypic.png" alt="Dakshath M Karkera profile picture" class="my_pic"/>
+    </div>
+    <div class="section__text">
+      <p class="section_text_p1">Hello, I'm</p>
+      <h1 class="title">Dakshath M Karkera</h1>
+      <p class="section_text_p2">Frontend Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <a href="https://www.instagram.com/mr___dakshu___" target="_blank">
+          <i class="fab fa-instagram icon"></i>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100034164698034&mibextid=ZbWKwL" target="_blank">
+          <i class="fab fa-facebook icon"></i>
+        </a>
+        <a href="https://twitter.com/yourusername" target="_blank">
+          <i class="fab fa-twitter icon"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <p class="section_text_p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="/assets/myimg.jpg" alt="Profile picture" class="about-pic"/>
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon"/>
+            <h3>Experience</h3>
+            <p>2+ years <br />Frontend Development</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.jpeg" alt="Education icon" class="icon"/>
+            <h3>Education</h3>
+            <p>Diploma in Computer Science (3 years)</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            I have experience in HTML, CSS, and Java. I enjoy creating beautiful and functional web applications.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.jpeg" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'"/>
+  </section>
+
+  <section id="experience">
+    <p class="section_text_p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="assets/tickmark.jpg" alt="Experience icon" class="icon"/>
+              <div>
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="assets/tickmark.jpg" alt="Experience icon" class="icon"/>
+              <div>
+                <h3>CSS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="assets/tickmark.jpg" alt="Experience icon" class="icon"/>
+              <div>
+                <h3>JavaScript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="assets/tickmark.jpg" alt="Experience icon" class="icon"/>
+              <div>
+                <h3>TypeScript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Backend Development</h2>
+          <div class="article-container">
+            _blank
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="/assets/arrow.jpeg" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'"/>
+  </section>
+
+  <section id="projects">
+    <p class="section_text_p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-1.png" alt="Project 1" class="project-img"/>
+          </div>
+          <h2 class="experience-sub-title project-title">Project One</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Github
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="/assets/arrow.jpeg" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'"/>
+  </section>
+
+  <section id="contact">
+    <p class="section_text_p1">Get In Touch</p>
+    <h1 class="title">Contact</h1>
+    <div class="contact-container">
+      <div class="contact-info">
+        <h2>Contact Details</h2>
+        <p>Email: <a href="mailto:mohanpoojari658@gmail.com">mohanpoojari658@gmail.com</a></p>
+        <p>Phone: <a href="tel:+919380634950">9380634950</a></p>
+        <div id="socials-container">
+          <a href="https://www.instagram.com/mr___dakshu___" target="_blank">
+            <i class="fab fa-instagram icon"></i>
+          </a>
+          <a href="https://www.facebook.com/yourusername" target="_blank">
+            <i class="fab fa-facebook icon"></i>
+          </a>
+          <a href="https://twitter.com/yourusername" target="_blank">
+            <i class="fab fa-twitter icon"></i>
+          </a>
+        </div>
+      </div>
+      <form action="mailto:mohanpoojari658@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit" class="btn btn-color-1">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Dakshath M Karkera. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector('.menu-links');
+      menu.classList.toggle('show');
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const toggleSwitch = document.getElementById('theme-toggle');
+      const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+      if (currentTheme) {
+        document.body.classList.add(currentTheme);
+        if (currentTheme === 'dark-mode') {
+          toggleSwitch.checked = true;
+        }
+      }
+
+      toggleSwitch.addEventListener('change', function () {
+        if (toggleSwitch.checked) {
+          document.body.classList.add('dark-mode');
+          document.body.classList.remove('light-mode');
+          localStorage.setItem('theme', 'dark-mode');
+        } else {
+          document.body.classList.add('light-mode');
+          document.body.classList.remove('dark-mode');
+          localStorage.setItem('theme', 'light-mode');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+
